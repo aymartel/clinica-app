@@ -21,7 +21,6 @@ const HomeOne = () => {
     <MenuContextProvider>
       <Layout PageTitle="Home Page">
         <HeaderOne/>
-        <Facebook/>
         <SliderOne/>
         <AboutThree/>
         <CtaOne/>
