@@ -5,15 +5,13 @@ import BlogPost from "./blog-post";
 import BlogSidebar from "./blog-sidebar";
 import Comments from "./comments";
 
-const BlogDetails = () => {
+const BlogDetails = ({ subTitle,text,tags,date,image }) => {
   return (
     <section className="blog_details_section section_padding">
       <Container>
         <Row>
           <Col lg={8}>
-            <BlogPost />
-            <BlogAuthor />
-            <Comments />
+            <BlogPost subTitle={subTitle} text={text} tags={tags} date={date} image={image}/>
           </Col>
           <Col lg={4}>
             <BlogSidebar />

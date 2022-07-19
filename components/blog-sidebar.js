@@ -3,78 +3,42 @@ import latestPost1 from "@/images/blog/post/latest-post-1.jpg";
 import latestPost2 from "@/images/blog/post/latest-post-2.jpg";
 import latestPost3 from "@/images/blog/post/latest-post-3.jpg";
 import Img from "@/components/img";
+import { useTranslations } from 'next-intl'
+import imageSTD from "@/images/blog/std.webp";
+import imagePapSmearTest from "@/images/blog/blogDetail-pap-smear-test.webp";
+import imageCardiovascularDiseases from "@/images/blog/cardiovascular-diseases.webp";
 
 const BlogSidebar = () => {
+  const t = useTranslations('Index')
   return (
     <div className="blog_details_right">
-      <div className="blog_right_box mb-30">
-        <div className="widget_search">
-          <input type="search" name="s" placeholder="Search here..." />
-        </div>
-      </div>
+      
       <div className="blog_right_box mb-30">
         <div className="latest_post">
-          <h2>Latest Posts</h2>
+          <h2>{t('Blog_Latest')}</h2>
           <ul>
             <li>
-              <a href="#">
+              <a href={t('Blog_PapSmearTest_URL')}>
                 <div className="img-block">
-                  <Img src={latestPost1} alt="post 1" layout="responsive" />
+                  <Img src={imagePapSmearTest} alt="post 1" layout="responsive" />
                 </div>
-                Change your air filter regularly
+                {t('Blog_PapSmearTest_Title')}
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href={t('Blog_STD_URL')}>
                 <div className="img-block">
-                  <Img src={latestPost2} alt="post 1" layout="responsive" />
+                  <Img src={imageSTD} alt="post 1" layout="responsive" />
                 </div>
-                Our goal is to help you save energy
+                {t('Blog_STD_Title')}
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href={t('Blog_CardiovascularDiseases_URL')}>
                 <div className="img-block">
-                  <Img src={latestPost3} alt="post 1" layout="responsive" />
+                  <Img src={imageCardiovascularDiseases} alt="post 1" layout="responsive" />
                 </div>
-                How to ensure your ac system is efficient
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="blog_right_box mb-30">
-        <div className="widget_categories">
-          <h2>Categories</h2>
-          <ul>
-            <li>
-              <a href="#">
-                Air Conditioning <i className="fa fa-angle-right"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Heating <i className="fa fa-angle-right"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Repairing <i className="fa fa-angle-right"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Maintenance <i className="fa fa-angle-right"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Other Services <i className="fa fa-angle-right"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Commercial Services <i className="fa fa-angle-right"></i>
+                {t('Blog_CardiovascularDiseases_Title')}
               </a>
             </li>
           </ul>
@@ -85,25 +49,10 @@ const BlogSidebar = () => {
           <h2>Tags</h2>
           <ul>
             <li>
-              <a href="">repairing</a>
+              <a href="https://goo.gl/maps/dkfrVPiwuRgkqN2p6">Clínica Latina en Houston Tx</a>
             </li>
             <li>
-              <a href="">air conditioning</a>
-            </li>
-            <li>
-              <a href="">services</a>
-            </li>
-            <li>
-              <a href="">maintenance</a>
-            </li>
-            <li>
-              <a href="">heating</a>
-            </li>
-            <li>
-              <a href="">commerical</a>
-            </li>
-            <li>
-              <a href="">new parts</a>
+              <a href="https://www.google.com/search?q=clinica+hispana+salud+y+esperanza&sxsrf=ALiCzsYQzojSelGhXW_g8JTLN2zObbYtUw%3A1658215150809&ei=7lrWYoqLMe_GrgSk35n4Bg&gs_ssp=eJwFwUsKgCAQAFDaBt3BFq1T0snxCN1i_JRCSCaBdfre64f5mIUoJVooduGdmXjTILn3KK3SEBwIwxvupFaHCFrIgAq20Z0pJ0cspnpRJlbpfDx7WahXuCl_9AN-uhuW&oq=cli&gs_lcp=Cgdnd3Mtd2l6EAMYATIECCMQJzIKCC4QxwEQrwEQJzIGCCMQJxATMgcIABDJAxBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEOgQIABBDOgsILhCABBDHARDRA0oECEEYAEoECEYYAFAAWJQDYMQMaABwAXgAgAFTiAHtAZIBATOYAQCgAQHAAQE&sclient=gws-wiz">Clinica Hispana</a>
             </li>
           </ul>
         </div>
