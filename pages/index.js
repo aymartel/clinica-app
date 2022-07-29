@@ -18,8 +18,8 @@ import ServiceOneHome from "@/components/service-one-home";
 const HomeOne = () => {
   // const { t } = useTranslations('Index');
   return (
-    <MenuContextProvider>
-      <Layout PageTitle="Home Page">
+    <MenuContextProvider >
+      <Layout PageTitle="Home Page" itemScope itemType="https://schema.org/MedicalClinic">
         <HeaderOne/>
         <SliderOne/>
         <AboutThree/>

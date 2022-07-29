@@ -5,16 +5,16 @@ const BlogPost = ({subTitle,text,tags,date,image}) => {
   const tagsArray = tags.split('\n');
   const textArray = text.split('\n');
   return (
-    <div>
+    <div itemScope itemType="https://schema.org/Article">
       <div className="blog_left_box">
         <div className="bl_share_img">
           <Img src={image} alt="blog details" layout="responsive" />
           <span className="blog_date">{date}</span>
         </div>
         <div className="blog_share_details blog_share_details__details">
-          <h1>{subTitle}</h1>
+          <h1 itemProp="name">{subTitle}</h1>
           {textArray.map((data, index) => (
-            <p key={index}>{data}</p>
+            <p key={index} itemProp="description">{data}</p>
           ))}
         </div>
       </div>

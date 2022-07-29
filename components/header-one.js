@@ -34,7 +34,7 @@ const HeaderOne = () => {
 
   return (
     <Fragment>
-      <header className="header_area">
+      <header className="header_area" >
         <div className="container">
           <div className="header_social">
             <ul className="hd_social_icons">
@@ -52,15 +52,17 @@ const HeaderOne = () => {
             <ul className="hd_contact">
               <li >
                 <i className="icon-placeholder"></i>{t('Header_Address')} 
-                <a href="https://goo.gl/maps/EDXnEMyKf3b6iAqAA"> 8200 Wilcrest Dr Suite 20, Houston, TX 77072</a>
+                <a href="https://goo.gl/maps/EDXnEMyKf3b6iAqAA" itemProp="PostalAddress"> 8200 Wilcrest Dr Suite 20, Houston, TX 77072</a>
               </li>
               <li >
                 <i className="icon-phone-call"></i> {t('Header_Call_Now')}
-                <a href="tel:+13465702594"> +1 346-570-2594</a>
+                <a href="tel:+13465702594" itemProp="telephone"> +1 346-570-2594</a>
               </li>
               <li >
                 <i className="icon-clock"></i> {t('Header_Open_hours')}
-                <a href="#"> {t('Header_Mon_Sun')}</a>
+                <a href="#" itemProp="openingHours"> {t('Header_Mon_Sun')}</a>
+                <a href="#" itemProp="openingHours" hidden > Mo 09:00-20:00 Tu 09:00-20:00 We 09:00-20:00 Th 09:00-20:00 Fr 09:00-20:00 Sa 09:00-17:00 Su 09:00-17:00</a>
+                
               </li>
 
               {/* {TopbarInfos.map(({ icon, tagLine, text, url }, index) => (
