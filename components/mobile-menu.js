@@ -41,6 +41,9 @@ const MobileMenu = () => {
             <li>
               <Link href="/about">{t('Header_About')}</Link>
             </li>
+            <li>
+              <Link href="/blog">{t('Header_Blog')}</Link>
+            </li>
             <li
               className="menu-item-has-children"
             >
