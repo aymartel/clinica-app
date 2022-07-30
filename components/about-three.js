@@ -21,7 +21,7 @@ const AboutThree = () => {
                 <h4 className="heading_with_border">{t('AboutThreeData_Tagline')}</h4>
                 <h1><em>{t('AboutThreeData_Title')}</em></h1>
               </div>
-              <p>{AboutThreeData_SummeryArray[0]}<strong>{AboutThreeData_SummeryArray[1]}</strong>{AboutThreeData_SummeryArray[2]}</p>
+              <p>{AboutThreeData_SummeryArray[0]}<strong><a href="https://goo.gl/maps/EDXnEMyKf3b6iAqAA" target="_blank">{AboutThreeData_SummeryArray[1]}</a></strong>{AboutThreeData_SummeryArray[2]}</p>
               <Link href="/about" className="btn-yellow">
                 {t('AboutThreeData_Button')}
               </Link>

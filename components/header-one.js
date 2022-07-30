@@ -60,7 +60,7 @@ const HeaderOne = () => {
               </li>
               <li >
                 <i className="icon-clock"></i> {t('Header_Open_hours')}
-                <a href="#" itemProp="openingHours"> {t('Header_Mon_Sun')}</a>
+                <a href="#"> {t('Header_Mon_Sun')}</a>
                 <a href="#" itemProp="openingHours" hidden > Mo 09:00-20:00 Tu 09:00-20:00 We 09:00-20:00 Th 09:00-20:00 Fr 09:00-20:00 Sa 09:00-17:00 Su 09:00-17:00</a>
                 
               </li>

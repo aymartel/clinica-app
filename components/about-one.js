@@ -18,7 +18,7 @@ const AboutOne = () => {
                 <h4 className="heading_with_border">{t('AboutOneData_Tagline')}</h4>
                 <h1>{t('AboutOneData_Title')}</h1>
               </div>
-              <p>{AboutOneData_ContentArray[0]}<strong>{AboutOneData_ContentArray[1]}</strong>{AboutOneData_ContentArray[2]}<strong>{AboutOneData_ContentArray[3]}</strong>{AboutOneData_ContentArray[4]}<strong>{AboutOneData_ContentArray[5]}</strong>{AboutOneData_ContentArray[6]}</p>
+              <p>{AboutOneData_ContentArray[0]}<strong><Link href="/about">{AboutOneData_ContentArray[1]}</Link></strong>{AboutOneData_ContentArray[2]}<strong><Link href="/contact">{AboutOneData_ContentArray[3]}</Link></strong>{AboutOneData_ContentArray[4]}<strong><Link href="/appointment">{AboutOneData_ContentArray[5]}</Link></strong>{AboutOneData_ContentArray[6]}</p>
               <Link href="/about" className="btn-yellow">
                 {t('AboutOneData_Button_Label')}
               </Link>

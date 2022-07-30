@@ -7,40 +7,145 @@ import { useTranslations } from 'next-intl'
 import imageSTD from "@/images/blog/std.webp";
 import imagePapSmearTest from "@/images/blog/blogDetail-pap-smear-test.webp";
 import imageCardiovascularDiseases from "@/images/blog/cardiovascular-diseases.webp";
+import imageMammogram from "@/images/blog/mammogram.webp";
+import imageObesity from "@/images/blog/obesity.webp";
+import imageProstateExamination from "@/images/blog/prostateexam.webp";
+import imageVaginosis from "@/images/blog/vaginosis.webp";
+import imageBloodTest from "@/images/blog/bloodtest.webp";
+import imageCheckUps from "@/images/blog/checkups.webp";
+import imageDiabetes from "@/images/blog/diabetes.webp";
+import { useRouter } from "next/router";
 
 const BlogSidebar = () => {
-  const t = useTranslations('Index')
+  const t = useTranslations('Index');
+  const router = useRouter();
   return (
     <div className="blog_details_right">
-      
+
       <div className="blog_right_box mb-30">
         <div className="latest_post">
           <h2>{t('Blog_Latest')}</h2>
           <ul>
-            <li>
-              <a href={t('Blog_PapSmearTest_URL')}>
-                <div className="img-block">
-                  <Img src={imagePapSmearTest} alt="post 1" layout="responsive" />
-                </div>
-                {t('Blog_PapSmearTest_Title')}
-              </a>
-            </li>
-            <li>
-              <a href={t('Blog_STD_URL')}>
-                <div className="img-block">
-                  <Img src={imageSTD} alt="post 1" layout="responsive" />
-                </div>
-                {t('Blog_STD_Title')}
-              </a>
-            </li>
-            <li>
-              <a href={t('Blog_CardiovascularDiseases_URL')}>
-                <div className="img-block">
-                  <Img src={imageCardiovascularDiseases} alt="post 1" layout="responsive" />
-                </div>
-                {t('Blog_CardiovascularDiseases_Title')}
-              </a>
-            </li>
+            {
+              (router.asPath != t('Blog_PapSmearTest_URL')) ?
+                <li>
+                  <a href={t('Blog_PapSmearTest_URL')}>
+                    <div className="img-block">
+                      <Img src={imagePapSmearTest} alt="post 1" layout="responsive" />
+                    </div>
+                    {t('Blog_PapSmearTest_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
+              (router.asPath != t('Blog_STD_URL')) ?
+                <li>
+                  <a href={t('Blog_STD_URL')}>
+                    <div className="img-block">
+                      <Img src={imageSTD} alt="post 1" layout="responsive" />
+                    </div>
+                    {t('Blog_STD_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
+              (router.asPath != t('Blog_CardiovascularDiseases_URL')) ?
+                <li>
+                  <a href={t('Blog_CardiovascularDiseases_URL')}>
+                    <div className="img-block">
+                      <Img src={imageCardiovascularDiseases} alt="post 1" layout="responsive" />
+                    </div>
+                    {t('Blog_CardiovascularDiseases_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
+              (router.asPath != t('Blog_Mammogram_URL')) ?
+                <li>
+                  <a href={t('Blog_Mammogram_URL')}>
+                    <div className="img-block">
+                      <Img src={imageMammogram} alt="image mammogram" layout="responsive" />
+                    </div>
+                    {t('Blog_Mammogram_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
+              (router.asPath != t('Blog_Obesity_URL')) ?
+                <li>
+                  <a href={t('Blog_Obesity_URL')}>
+                    <div className="img-block">
+                      <Img src={imageObesity} alt="image obesity" layout="responsive" />
+                    </div>
+                    {t('Blog_Obesity_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
+              (router.asPath != t('Blog_ProstateExamination_URL')) ?
+                <li>
+                  <a href={t('Blog_ProstateExamination_URL')}>
+                    <div className="img-block">
+                      <Img src={imageProstateExamination} alt="image prostate examination" layout="responsive" />
+                    </div>
+                    {t('Blog_ProstateExamination_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
+              (router.asPath != t('Blog_Vaginosis_URL')) ?
+                <li>
+                  <a href={t('Blog_Vaginosis_URL')}>
+                    <div className="img-block">
+                      <Img src={imageVaginosis} alt="image vaginosis" layout="responsive" />
+                    </div>
+                    {t('Blog_Vaginosis_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
+              (router.asPath != t('Blog_BloodTest_URL')) ?
+                <li>
+                  <a href={t('Blog_BloodTest_URL')}>
+                    <div className="img-block">
+                      <Img src={imageBloodTest} alt="image blood test" layout="responsive" />
+                    </div>
+                    {t('Blog_BloodTest_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
+              (router.asPath != t('Blog_CheckUps_URL')) ?
+                <li>
+                  <a href={t('Blog_CheckUps_URL')}>
+                    <div className="img-block">
+                      <Img src={imageCheckUps} alt="image blood test" layout="responsive" />
+                    </div>
+                    {t('Blog_CheckUps_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
+              (router.asPath != t('Blog_Diabetes_URL')) ?
+                <li>
+                  <a href={t('Blog_Diabetes_URL')}>
+                    <div className="img-block">
+                      <Img src={imageDiabetes} alt="image blood test" layout="responsive" />
+                    </div>
+                    {t('Blog_Diabetes_Title')}
+                  </a>
+                </li>
+                : null
+            }
           </ul>
         </div>
       </div>
@@ -49,10 +154,31 @@ const BlogSidebar = () => {
           <h2>Tags</h2>
           <ul>
             <li>
-              <a href="https://goo.gl/maps/dkfrVPiwuRgkqN2p6">Clínica Latina en Houston Tx</a>
+              <a href="https://clinicahispanasaludesperanza.com" target="_blank">Clínica Latina en Houston Tx</a>
             </li>
             <li>
-              <a href="https://www.google.com/search?q=clinica+hispana+salud+y+esperanza&sxsrf=ALiCzsYQzojSelGhXW_g8JTLN2zObbYtUw%3A1658215150809&ei=7lrWYoqLMe_GrgSk35n4Bg&gs_ssp=eJwFwUsKgCAQAFDaBt3BFq1T0snxCN1i_JRCSCaBdfre64f5mIUoJVooduGdmXjTILn3KK3SEBwIwxvupFaHCFrIgAq20Z0pJ0cspnpRJlbpfDx7WahXuCl_9AN-uhuW&oq=cli&gs_lcp=Cgdnd3Mtd2l6EAMYATIECCMQJzIKCC4QxwEQrwEQJzIGCCMQJxATMgcIABDJAxBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEOgQIABBDOgsILhCABBDHARDRA0oECEEYAEoECEYYAFAAWJQDYMQMaABwAXgAgAFTiAHtAZIBATOYAQCgAQHAAQE&sclient=gws-wiz">Clinica Hispana</a>
+              <a href="https://goo.gl/maps/dkfrVPiwuRgkqN2p6" target="_blank">Clinica Hispana</a>
+            </li>
+            <li>
+              <a href="https://goo.gl/maps/dkfrVPiwuRgkqN2p6" target="_blank">Clínica cerca de mi</a>
+            </li>
+            <li>
+              <a href="https://clinicahispanasaludesperanza.com/about" target="_blank">Clínica familiar</a>
+            </li>
+            <li>
+              <a href="https://clinicahispanasaludesperanza.com/contact" target="_blank">Clínica en Houston</a>
+            </li>
+            <li>
+              <a href="https://clinicahispanasaludesperanza.com/appointment"target="_blank">Medicina general</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/clinicahispanahouston" target="_blank">Médico Primario</a>
+            </li>
+            <li>
+              <a href="https://clinicahispanasaludesperanza.com/services" target="_blank">Atención Médica</a>
+            </li>
+            <li>
+              <a href="https://clinicahispanasaludesperanza.com/blog" target="_blank">Atención Médica</a>
             </li>
           </ul>
         </div>
