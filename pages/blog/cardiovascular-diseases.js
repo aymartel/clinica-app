@@ -14,7 +14,7 @@ const BlogCardiovascularDiseases = () => {
     <MenuContextProvider>
       <Layout PageTitle={t('Blog_CardiovascularDiseases_Title')}>
         <HeaderOne />
-        <PageHeader title={t('Blog_PapSmearTest_Title')} name="Blog" />
+        <PageHeader title={t('Blog_CardiovascularDiseases_Title')} name="Blog" />
         <BlogDetails
           subTitle={t('Blog_CardiovascularDiseases_SubTitle')}
           text={t('Blog_CardiovascularDiseases_Text')}
