@@ -2,7 +2,7 @@ import React from "react";
 import Img from "./img";
 import Link from "@/components/link";
 
-const BlogCard = ({image, date, title, url, text}) => {
+const BlogCard = ({ image, date, title, url, text, buttonText }) => {
   return (
     <div className="blog_share_box">
       <div className="bl_share_img">
@@ -13,8 +13,12 @@ const BlogCard = ({image, date, title, url, text}) => {
         <h1>
           <Link href={url}>{title}</Link>
         </h1>
-        <p>{text.substring(0, 100)}...</p>
+        <Link href={url}><p>{text.substring(0, 100)}...</p></Link>
+        <Link href={url} >
+        {buttonText}
+      </Link>
       </div>
+      
     </div>
   );
 };
