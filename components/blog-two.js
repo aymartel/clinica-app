@@ -13,6 +13,7 @@ import imageProstateExamination from "@/images/blog/prostateexam.webp";
 import imageBloodTest from "@/images/blog/bloodtest.webp";
 import imageObesity from "@/images/blog/obesity.webp";
 import imageMammogram from "@/images/blog/mammogram.webp";
+import imageTinnitus from "@/images/blog/tinnitus.webp";
 
 const BlogTwo = () => {
   const t = useTranslations('Index')
@@ -50,6 +51,9 @@ const BlogTwo = () => {
           </Col>
           <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageProstateExamination} date={t('Blog_ProstateExamination_Date')} title={t('Blog_ProstateExamination_Title')} url={t('Blog_ProstateExamination_URL')} text={t('Blog_ProstateExamination_Text')} />
+          </Col>
+          <Col lg={4} md={6} sm={12} >
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageTinnitus} date={t('Blog_Tinnitus_Date')} title={t('Blog_Tinnitus_Title')} url={t('Blog_Tinnitus_URL')} text={t('Blog_Tinnitus_Text')} />
           </Col>
         </Row>
       </Container>
