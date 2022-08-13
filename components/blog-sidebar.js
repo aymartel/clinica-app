@@ -28,6 +28,18 @@ const BlogSidebar = () => {
           <h2>{t('Blog_Latest')}</h2>
           <ul>
             {
+              (router.asPath != t('Blog_Tinnitus_URL')) ?
+                <li>
+                  <a href={t('Blog_Tinnitus_URL')}>
+                    <div className="img-block">
+                      <Img src={imageTinnitus} alt="image Tinnitus" layout="responsive" />
+                    </div>
+                    {t('Blog_Tinnitus_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
               (router.asPath != t('Blog_PapSmearTest_URL')) ?
                 <li>
                   <a href={t('Blog_PapSmearTest_URL')}>
@@ -147,18 +159,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             }
-            {
-              (router.asPath != t('Blog_Tinnitus_URL')) ?
-                <li>
-                  <a href={t('Blog_Tinnitus_URL')}>
-                    <div className="img-block">
-                      <Img src={imageTinnitus} alt="image Tinnitus" layout="responsive" />
-                    </div>
-                    {t('Blog_Tinnitus_Title')}
-                  </a>
-                </li>
-                : null
-            }
+
           </ul>
         </div>
       </div>
@@ -182,7 +183,7 @@ const BlogSidebar = () => {
               <a href="https://clinicahispanasaludesperanza.com/contact" target="_blank">Clínica en Houston</a>
             </li>
             <li>
-              <a href="https://clinicahispanasaludesperanza.com/appointment"target="_blank">Medicina general</a>
+              <a href="https://clinicahispanasaludesperanza.com/appointment" target="_blank">Medicina general</a>
             </li>
             <li>
               <a href="https://www.facebook.com/clinicahispanahouston" target="_blank">Médico Primario</a>
