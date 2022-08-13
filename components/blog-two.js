@@ -23,13 +23,16 @@ const BlogTwo = () => {
       <Container>
         <Row>
           <Col lg={4} md={6} sm={12} >
-            <BlogCard  buttonText={t('ServiceOneData_Button')}image={imageCheckUps} date={t('Blog_CheckUps_Date')} title={t('Blog_CheckUps_Title')} url={t('Blog_CheckUps_URL')} text={t('Blog_CheckUps_Text')} />
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageTinnitus} date={t('Blog_Tinnitus_Date')} title={t('Blog_Tinnitus_Title')} url={t('Blog_Tinnitus_URL')} text={t('Blog_Tinnitus_Text')} />
           </Col>
           <Col lg={4} md={6} sm={12} >
-            <BlogCard  buttonText={t('ServiceOneData_Button')}image={imagePapSmearTest} date={t('Blog_PapSmearTest_Date')} title={t('Blog_PapSmearTest_Title')} url={t('Blog_PapSmearTest_URL')} text={t('Blog_PapSmearTest_Text')} />
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageCheckUps} date={t('Blog_CheckUps_Date')} title={t('Blog_CheckUps_Title')} url={t('Blog_CheckUps_URL')} text={t('Blog_CheckUps_Text')} />
           </Col>
           <Col lg={4} md={6} sm={12} >
-            <BlogCard  buttonText={t('ServiceOneData_Button')}image={imageSTD} date={t('Blog_STD_Date')} title={t('Blog_STD_Title')} url={t('Blog_STD_URL')} text={t('Blog_STD_Text')} />
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imagePapSmearTest} date={t('Blog_PapSmearTest_Date')} title={t('Blog_PapSmearTest_Title')} url={t('Blog_PapSmearTest_URL')} text={t('Blog_PapSmearTest_Text')} />
+          </Col>
+          <Col lg={4} md={6} sm={12} >
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageSTD} date={t('Blog_STD_Date')} title={t('Blog_STD_Title')} url={t('Blog_STD_URL')} text={t('Blog_STD_Text')} />
           </Col>
           <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageVaginosis} date={t('Blog_Vaginosis_Date')} title={t('Blog_Vaginosis_Title')} url={t('Blog_Vaginosis_URL')} text={t('Blog_Vaginosis_Text')} />
@@ -41,7 +44,7 @@ const BlogTwo = () => {
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageObesity} date={t('Blog_Obesity_Date')} title={t('Blog_Obesity_Title')} url={t('Blog_Obesity_URL')} text={t('Blog_Obesity_Text')} />
           </Col>
           <Col lg={4} md={6} sm={12} >
-            <BlogCard  buttonText={t('ServiceOneData_Button')}image={imageBloodTest} date={t('Blog_BloodTest_Date')} title={t('Blog_BloodTest_Title')} url={t('Blog_BloodTest_URL')} text={t('Blog_BloodTest_Text')} />
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageBloodTest} date={t('Blog_BloodTest_Date')} title={t('Blog_BloodTest_Title')} url={t('Blog_BloodTest_URL')} text={t('Blog_BloodTest_Text')} />
           </Col>
           <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageMammogram} date={t('Blog_Mammogram_Date')} title={t('Blog_Mammogram_Title')} url={t('Blog_Mammogram_URL')} text={t('Blog_Mammogram_Text')} />
@@ -52,9 +55,7 @@ const BlogTwo = () => {
           <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageProstateExamination} date={t('Blog_ProstateExamination_Date')} title={t('Blog_ProstateExamination_Title')} url={t('Blog_ProstateExamination_URL')} text={t('Blog_ProstateExamination_Text')} />
           </Col>
-          <Col lg={4} md={6} sm={12} >
-            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageTinnitus} date={t('Blog_Tinnitus_Date')} title={t('Blog_Tinnitus_Title')} url={t('Blog_Tinnitus_URL')} text={t('Blog_Tinnitus_Text')} />
-          </Col>
+
         </Row>
       </Container>
     </section>
