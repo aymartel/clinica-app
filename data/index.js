@@ -368,6 +368,10 @@ export const FooterBottomData = {
       icon: "fa fa-pinterest",
       url: "https://www.pinterest.com/clinicahispanasaludesperanza/"
     },
+    {
+      icon: "fa fa-apple",
+      url: "https://maps.apple.com/?address=8200%20Wilcrest%20Dr,%20Unit%2020,%20Houston,%20TX%20%2077072,%20United%20States&auid=12131600322575239331&ll=29.688584,-95.572187&lsp=9902&q=Clinica%20Hispana%20Salud%20Y%20Esperanza&_ext=CjIKBQgEEOIBCgQIBRADCgQIBhByCgQIChAACgQIUhAECgQIVRAACgQIWRAGCgUIpAEQARImKTAgIOY0rz1AMbHUDijz5FfAOSzLa56BsT1AQUEIfrxJ5FfAUAM%3D&t=h"
+    },
   ]
 };
 

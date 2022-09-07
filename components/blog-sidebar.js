@@ -16,6 +16,7 @@ import imageCheckUps from "@/images/blog/checkups.webp";
 import imageDiabetes from "@/images/blog/diabetes.webp";
 import imageTinnitus from "@/images/blog/tinnitus.webp";
 import imageCholesterol from "@/images/blog/colesterol.webp";
+import imageUltrasound from "@/images/blog/ultrasound.webp";
 
 import { useRouter } from "next/router";
 
@@ -29,6 +30,18 @@ const BlogSidebar = () => {
         <div className="latest_post">
           <h2>{t('Blog_Latest')}</h2>
           <ul>
+          {
+              (router.asPath != t('Blog_Ultrasound_URL')) ?
+                <li>
+                  <a href={t('Blog_Ultrasound_URL')}>
+                    <div className="img-block">
+                      <Img src={imageUltrasound} alt="image Ultrasound" layout="responsive" />
+                    </div>
+                    {t('Blog_Ultrasound_Title')}
+                  </a>
+                </li>
+                : null
+            }
           {
               (router.asPath != t('Blog_Cholesterol_URL')) ?
                 <li>
