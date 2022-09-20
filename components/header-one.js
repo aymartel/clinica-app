@@ -144,6 +144,9 @@ const HeaderOne = () => {
                 <li className={(router.pathname == "/about") ? "active" : ""}>
                   <Link href="/about">{t('Header_About')}</Link>
                 </li>
+                <li className={(router.pathname == "/faq") ? "active" : ""}>
+                  <Link href="/faq">FAQ</Link>
+                </li>
                 <li className={(router.pathname == "/services") ? "active" : ""}>
                   <Link href="/services">{t('Header_Services')}</Link>
                   <ul className="sub-menu">
