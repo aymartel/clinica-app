@@ -12,6 +12,7 @@ import "@/css/fontello.css";
 import "@/css/style.css";
 import "@/css/responsive.css";
 import { NextIntlProvider } from 'next-intl'
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   return (
