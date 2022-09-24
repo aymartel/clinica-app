@@ -5,7 +5,7 @@ import MobileMenu from "./mobile-menu";
 import { MenuContext } from "@/context/menu-context";
 import { useTranslations } from 'next-intl';
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   const t = useTranslations('Index');
   const [scrollTop, setScrollTop] = useState(false);
   const { menuStatus } = useContext(MenuContext);
@@ -27,6 +27,7 @@ const Layout = ({children}) => {
   return (
     <Fragment>
       <Head>
+        <meta name="robots" content="all"/>
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
@@ -56,7 +57,7 @@ const Layout = ({children}) => {
                 "@type": "AggregateRating",
                 ratingValue: "4.9",
                 reviewCount: "157"
-            }
+              }
             })
           }}
         />
@@ -64,7 +65,7 @@ const Layout = ({children}) => {
       </Head>
       <div id="wrapper">{children}</div>
 
-      {true === menuStatus ? <MobileMenu/> : null}
+      {true === menuStatus ? <MobileMenu /> : null}
       {scrollTop === true ? (
         <ScrollLink
           to="wrapper"
