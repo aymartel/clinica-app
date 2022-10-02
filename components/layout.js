@@ -40,6 +40,8 @@ const Layout = ({ children }) => {
         <meta name="author" content="Andi Martel Karpio" />
         <meta name="Revisit-after" content="7 days" />
         <meta name="copyright" content="Clínica Hispana Salud y Esperanza" />
+        <meta name='og:image' content='https://www.clinicahispanasaludesperanza.com/_next/static/media/logo.4f03e442.svg'/>
+        <meta name='og:postal-code' content='77072'/>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
           async

@@ -12,7 +12,7 @@ const BlogTinnitus = () => {
   const t = useTranslations('Index');
   return (
     <MenuContextProvider>
-      <Layout PageTitle={t('Blog_Tinnitus_Title')}>
+      <Layout PageTitle={t('Blog_Tinnitus_Title')} itemscope itemtype="https://schema.org/Article">
         <HeaderOne />
         <PageHeader title={t('Blog_Tinnitus_Title')} name="Blog" />
         <BlogDetails
