@@ -1,36 +1,32 @@
 import React, { useState } from "react";
 import Script from 'next/script';
 
-const Facebook = () =>  {
-        return (
-          <div>
-            <div id="fb-root"></div>
-      
-            <div id="fb-customer-chat" className="fb-customerchat"></div>
-            <Script id="facebook" strategy="lazyOnload">
-              {`
-                  var chatbox = document.getElementById('fb-customer-chat');
-                  chatbox.setAttribute("page_id", "105059398249714");
-                  chatbox.setAttribute("attribution", "biz_inbox");
-            
-                  window.fbAsyncInit = function() {
-                    FB.init({
-                      xfbml            : true,
-                      version          : 'v14.0'
-                    });
-                  };
-            
-                  (function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                  }(document, 'script', 'facebook-jssdk'));
+const Facebook = () => {
+  return (
+    <div>
+      <div id="fb-root"></div>
+
+      <div id="fb-customer-chat" className="fb-customerchat"></div>
+      <Script id="facebook" strategy="lazyOnload">
+        {`
+                  
+        (function () {
+        var options = {
+          facebook: "1503421039731588", // Facebook page ID
+        call_to_action: "Envíanos un mensaje", // Call to action
+        button_color: "#129BF4", // Color of button
+        position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () {WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+
               `}
-            </Script>
-          </div>
-        );
-      }
+      </Script>
+    </div>
+  );
+}
 
 export default Facebook;
