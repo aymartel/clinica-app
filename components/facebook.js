@@ -12,7 +12,7 @@ const Facebook = () => {
                   
         (function () {
         var options = {
-          facebook: "1503421039731588", // Facebook page ID
+          facebook: "446994640771256", // Facebook page ID
         call_to_action: "Envíanos un mensaje", // Call to action
         button_color: "#129BF4", // Color of button
         position: "right", // Position may be 'right' or 'left'
