@@ -14,7 +14,7 @@ const Footer = () => {
   const Header_Mobile_MenuTextArray = t('Header_Mobile_MenuText').split('\n'); 
   return (
     <footer className="footer_area">
-      {/* <Facebook/> */}
+      <Facebook/>
       <div className="footer_contact text-center">
         <div className="container">
           <div className="row">
