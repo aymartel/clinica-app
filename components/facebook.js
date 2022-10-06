@@ -10,13 +10,18 @@ const Facebook = () => {
       <Script id="facebook" strategy="lazyOnload">
         {`
                   
-                  
-                  window.callbellSettings = {
-                    token: "XqSZoVpZjUWwnrHYGnnMtBt4"
-                  };
-            
-                  (function(){var w=window;var ic=w.callbell;if(typeof ic==="function"){ic('reattach_activator');ic('update',callbellSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Callbell=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://dash.callbell.eu/include/'+window.callbellSettings.token+'.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
-         
+        (function () {
+        var options = {
+          facebook: "6343B4F1", // Facebook page ID
+        call_to_action: "Envíanos un mensaje", // Call to action
+        button_color: "#129BF4", // Color of button
+        position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () {WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
 
               `}
       </Script>
