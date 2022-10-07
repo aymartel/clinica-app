@@ -6,22 +6,13 @@ const Facebook = () => {
     <div>
       <div id="fb-root"></div>
 
-      <div id="fb-customer-chat" className="fb-customerchat"></div>
-      <Script id="facebook" strategy="lazyOnload">
+      {/* <div id="fb-customer-chat" className="fb-customerchat"></div> */}
+      <div className="elfsight-app-a75f1304-9300-4da6-94bb-ffd22745c5e4"></div>
+      <Script src="https://apps.elfsight.com/p/platform.js" defer strategy="lazyOnload">
         {`
                   
-        (function () {
-        var options = {
-          facebook: "414453055238471", // Facebook page ID
-        call_to_action: "Envíanos un mensaje", // Call to action
-        button_color: "#129BF4", // Color of button
-        position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () {WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
+               
+                 
 
               `}
       </Script>
