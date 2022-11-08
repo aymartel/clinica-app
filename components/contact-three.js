@@ -93,7 +93,7 @@ const ContactThree = () => {
                   </div>
                 </div>
                 <div className="row">
-
+                <div className="col-lg-12 col-md-12 ">
                   <input
                     className=""
                     type="tel"
@@ -102,9 +102,11 @@ const ContactThree = () => {
                     value={phone}
                     onChange={handleInputChange}
                     required
-                  /></div>
+                  />
+                  </div>
+                  </div>
                 <div className="row">
-
+                <div className="col-lg-12 col-md-12 ">
                   <input
                     type="textarea"
                     name="message"
@@ -113,6 +115,7 @@ const ContactThree = () => {
                     onChange={handleInputChange}
                     required
                   />
+                  </div>
                 </div>
 
                 <div className="row">

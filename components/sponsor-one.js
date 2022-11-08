@@ -8,8 +8,7 @@ import logo_seguro_medico1 from "@/images/logos/logo_seguro_medico1.webp";
 import logo_seguro_medico2 from "@/images/logos/logo_seguro_medico2.webp";
 import logo_seguro_medico3 from "@/images/logos/logo_seguro_medico3.webp";
 import logo_seguro_medico4 from "@/images/logos/logo_seguro_medico4.webp";
-import logo_seguro_medico5 from "@/images/logos/logo_seguro_medico5.webp";
-import logo_seguro_medico6 from "@/images/logos/logo_seguro_medico6.webp";
+
 import logo_seguro_medico7 from "@/images/logos/logo_seguro_medico7.webp";
 import logo_seguro_medico8 from "@/images/logos/logo_seguro_medico8.webp";
 import logo_seguro_medico9 from "@/images/logos/logo_seguro_medico9.webp";
@@ -69,12 +68,7 @@ const SponsorOne = ({ extraClass }) => {
             <SwiperSlide>
               <Image src={logo_seguro_medico4} alt="" />
             </SwiperSlide>
-            <SwiperSlide>
-              <Image src={logo_seguro_medico5} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image src={logo_seguro_medico6} alt="" />
-            </SwiperSlide>
+            
             <SwiperSlide>
               <Image src={logo_seguro_medico7} alt="" />
             </SwiperSlide>

@@ -51,7 +51,7 @@ const HeaderOne = () => {
           <div className="header_contact text-end">
             <ul className="hd_contact">
               <li >
-                <i className="icon-placeholder"></i>{t('Header_Address')} 
+                <i className="icon-placeholder"></i>{t('Header_Address')}
                 <a href="https://goo.gl/maps/EDXnEMyKf3b6iAqAA" itemProp="PostalAddress"> 8200 Wilcrest Dr Suite 20, Houston, TX 77072</a>
               </li>
               <li >
@@ -62,7 +62,7 @@ const HeaderOne = () => {
                 <i className="icon-clock"></i> {t('Header_Open_hours')}
                 <a href="#"> {t('Header_Mon_Sun')}</a>
                 <a href="#" itemProp="openingHours" hidden > Mo 09:00-20:00 Tu 09:00-20:00 We 09:00-20:00 Th 09:00-20:00 Fr 09:00-20:00 Sa 09:00-17:00 Su 09:00-17:00</a>
-                
+
               </li>
 
               {/* {TopbarInfos.map(({ icon, tagLine, text, url }, index) => (
@@ -103,19 +103,13 @@ const HeaderOne = () => {
                 //   }`}
                 className="buttons-movile">
                 <Link href="/appointment" className="btn-yellow-mobile">
-                  <Image
-                    src={calendar}
-                    alt="icon calendar"
-
-                    width={30}
-                    height={30}
-                  // blurDataURL="data:..." automatically provided
-                  // placeholder="blur" // Optional blur-up while loading
-                  />
+                 
+                    {t('Header_Book_Today')}
+                 
                 </Link>
                 <button className="button-call-mobile">
-                <a href="tel:+13465702594" > <i className="icon-phone-call"></i> </a>
-              </button>
+                  <a href="tel:+13465702594" > <i className="icon-phone-call"></i> </a>
+                </button>
                 <ChangeLanguaje />
               </div>
             </span>
@@ -180,20 +174,21 @@ const HeaderOne = () => {
                 </li>
               </ul>
             </nav>
-           
-              <button className="button-call-mobile">
-                <a href="tel:+13465702594" > <i className="icon-phone-call"></i> </a>
-              </button>
-         
-              <ChangeLanguaje />
+
+            <button className="button-call-mobile">
+              <a href="tel:+13465702594" > <i className="icon-phone-call"></i> </a>
+            </button>
+
+            <ChangeLanguaje />
             <Link href="/appointment" className="btn-yellow">
-            {t('Header_Book_Today')}
+              {t('Header_Book_Today')}
             </Link>
 
           </div>
         </div>
       </div>
     </Fragment>
+    
   );
 };
 

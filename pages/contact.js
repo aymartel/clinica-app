@@ -4,9 +4,9 @@ import HeaderOne from "@/components/header-one";
 import MenuContextProvider from "@/context/menu-context";
 import PageHeader from "@/components/page-header";
 import ContactThree from "@/components/contact-three";
-import ContactMap from "@/components/contact-map";
 import Footer from "@/components/footer";
 import { useTranslations } from 'next-intl'
+import SponsorOne from "@/components/sponsor-one";
 
 const Contact = () => {
   const t = useTranslations('Index')
@@ -17,7 +17,8 @@ const Contact = () => {
         <PageHeader title={t('Header_Contact')} name="Contact" />
         <ContactThree
         />
-        <ContactMap />
+        {/* <ContactMap /> */}
+        <SponsorOne/>
         <Footer/>
       </Layout>
     </MenuContextProvider>

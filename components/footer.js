@@ -1,12 +1,9 @@
 import React from "react";
-import { FooterBottomData, FooterInfo, FooterWidgets } from "@/data";
-import FooterShape from "@/images/shape/about-shape.webp";
-import Img from "@/components/img";
+import { FooterBottomData } from "@/data";
 import logoWhite from "@/images/logo-white.webp";
 import Image from "next/image";
 import Link from "@/components/link";
 import { useTranslations } from 'next-intl';
-import Facebook from "./facebook";
 
 
 const Footer = () => {
@@ -14,7 +11,6 @@ const Footer = () => {
   const Header_Mobile_MenuTextArray = t('Header_Mobile_MenuText').split('\n'); 
   return (
     <footer className="footer_area">
-      <Facebook/>
       <div className="footer_contact text-center">
         <div className="container">
           <div className="row">
