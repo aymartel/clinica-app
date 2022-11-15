@@ -32,7 +32,7 @@ const BlogSidebar = () => {
         <div className="latest_post">
           <h2>{t('Blog_Latest')}</h2>
           <ul>
-          {
+            {/* {
               (router.asPath != t('Blog_FLU_URL')) ?
                 <li>
                   <a href={t('Blog_FLU_URL')}>
@@ -43,8 +43,8 @@ const BlogSidebar = () => {
                   </a>
                 </li>
                 : null
-            }
-          {
+            } */}
+            {/* {
               (router.asPath != t('Blog_ADENOIDS_URL')) ?
                 <li>
                   <a href={t('Blog_ADENOIDS_URL')}>
@@ -55,8 +55,8 @@ const BlogSidebar = () => {
                   </a>
                 </li>
                 : null
-            }
-            {
+            } */}
+            {/* {
               (router.asPath != t('Blog_Ultrasound_URL')) ?
                 <li>
                   <a href={t('Blog_Ultrasound_URL')}>
@@ -67,7 +67,7 @@ const BlogSidebar = () => {
                   </a>
                 </li>
                 : null
-            }
+            } */}
             {
               (router.asPath != t('Blog_Cholesterol_URL')) ?
                 <li>
@@ -80,7 +80,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             }
-            {
+            {/* {
               (router.asPath != t('Blog_Tinnitus_URL')) ?
                 <li>
                   <a href={t('Blog_Tinnitus_URL')}>
@@ -91,7 +91,7 @@ const BlogSidebar = () => {
                   </a>
                 </li>
                 : null
-            }
+            } */}
             {
               (router.asPath != t('Blog_PapSmearTest_URL')) ?
                 <li>
@@ -116,7 +116,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             }
-            {
+            {/* {
               (router.asPath != t('Blog_CardiovascularDiseases_URL')) ?
                 <li>
                   <a href={t('Blog_CardiovascularDiseases_URL')}>
@@ -127,8 +127,8 @@ const BlogSidebar = () => {
                   </a>
                 </li>
                 : null
-            }
-            {
+            } */}
+            {/* {
               (router.asPath != t('Blog_Mammogram_URL')) ?
                 <li>
                   <a href={t('Blog_Mammogram_URL')}>
@@ -139,8 +139,8 @@ const BlogSidebar = () => {
                   </a>
                 </li>
                 : null
-            }
-            {
+            } */}
+            {/* {
               (router.asPath != t('Blog_Obesity_URL')) ?
                 <li>
                   <a href={t('Blog_Obesity_URL')}>
@@ -151,8 +151,8 @@ const BlogSidebar = () => {
                   </a>
                 </li>
                 : null
-            }
-            {
+            } */}
+            {/* {
               (router.asPath != t('Blog_ProstateExamination_URL')) ?
                 <li>
                   <a href={t('Blog_ProstateExamination_URL')}>
@@ -163,8 +163,8 @@ const BlogSidebar = () => {
                   </a>
                 </li>
                 : null
-            }
-            {
+            } */}
+            {/* {
               (router.asPath != t('Blog_Vaginosis_URL')) ?
                 <li>
                   <a href={t('Blog_Vaginosis_URL')}>
@@ -175,7 +175,7 @@ const BlogSidebar = () => {
                   </a>
                 </li>
                 : null
-            }
+            } */}
             {
               (router.asPath != t('Blog_BloodTest_URL')) ?
                 <li>
