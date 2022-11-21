@@ -33,11 +33,11 @@ const Layout = ({ children }) => {
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
         <title itemProp="name">
-          Clínica Hispana Salud y Esperanza | Medical Clinic | Houston TX
+          Clínica Hispana Salud y Esperanza | Medical Clinic in Houston TX
         </title>
-        <meta itemProp="description" name="description" content={t('MetaDescription_Home')} />
+        <meta name="description" content="Clínica Hispana Salud Y Esperanza | Clínica Médica en Houston Tx. Atención médica con o sin seguro médico y sin necesidad de cita previa.♥ Hispanic medical clinic near you ♥." />
         <meta name="keywords" content="Clínica, Hispana, Houston Tx" />
-        <meta name="author" content="Andi Martel Karpio" />
+        <meta name="author" content="Clínica Hispana Salud y Esperanza" />
         <meta name="Revisit-after" content="7 days" />
         <meta name="copyright" content="Clínica Hispana Salud y Esperanza" />
         <meta name='og:image' content='https://www.clinicahispanasaludesperanza.com/_next/static/media/logo.4f03e442.svg'/>
