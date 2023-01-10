@@ -69,6 +69,18 @@ const BlogSidebar = () => {
                 : null
             } */}
             {
+              (router.asPath != t('Blog_ProstateExamination_URL')) ?
+                <li>
+                  <a href={t('Blog_ProstateExamination_URL')}>
+                    <div className="img-block">
+                      <Img src={imageProstateExamination} alt="image prostate examination" layout="responsive" />
+                    </div>
+                    {t('Blog_ProstateExamination_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
               (router.asPath != t('Blog_Cholesterol_URL')) ?
                 <li>
                   <a href={t('Blog_Cholesterol_URL')}>
@@ -152,18 +164,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             } */}
-            {/* {
-              (router.asPath != t('Blog_ProstateExamination_URL')) ?
-                <li>
-                  <a href={t('Blog_ProstateExamination_URL')}>
-                    <div className="img-block">
-                      <Img src={imageProstateExamination} alt="image prostate examination" layout="responsive" />
-                    </div>
-                    {t('Blog_ProstateExamination_Title')}
-                  </a>
-                </li>
-                : null
-            } */}
+            
             {/* {
               (router.asPath != t('Blog_Vaginosis_URL')) ?
                 <li>

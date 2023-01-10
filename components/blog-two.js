@@ -26,6 +26,9 @@ const BlogTwo = () => {
     <section className="blog_share_area section_padding blog-page">
       <Container>
         <Row>
+        <Col lg={4} md={6} sm={12} >
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageProstateExamination} date={t('Blog_ProstateExamination_Date')} title={t('Blog_ProstateExamination_Title')} url={t('Blog_ProstateExamination_URL')} text={t('Blog_ProstateExamination_Text')} />
+          </Col>
           {/* <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageFLU} date={t('Blog_FLU_Date')} title={t('Blog_FLU_Title')} url={t('Blog_FLU_URL')} text={t('Blog_FLU_Text')} />
           </Col> */}
@@ -68,9 +71,7 @@ const BlogTwo = () => {
           <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageDiabetes} date={t('Blog_Diabetes_Date')} title={t('Blog_Diabetes_Title')} url={t('Blog_Diabetes_URL')} text={t('Blog_Diabetes_Text')} />
           </Col>
-          {/* <Col lg={4} md={6} sm={12} >
-            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageProstateExamination} date={t('Blog_ProstateExamination_Date')} title={t('Blog_ProstateExamination_Title')} url={t('Blog_ProstateExamination_URL')} text={t('Blog_ProstateExamination_Text')} />
-          </Col> */}
+          
 
         </Row>
       </Container>
