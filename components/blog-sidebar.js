@@ -44,7 +44,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             } */}
-            {/* {
+            {
               (router.asPath != t('Blog_ADENOIDS_URL')) ?
                 <li>
                   <a href={t('Blog_ADENOIDS_URL')}>
@@ -55,7 +55,7 @@ const BlogSidebar = () => {
                   </a>
                 </li>
                 : null
-            } */}
+            }
             {/* {
               (router.asPath != t('Blog_Ultrasound_URL')) ?
                 <li>
