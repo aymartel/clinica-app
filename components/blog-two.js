@@ -31,6 +31,9 @@ const BlogTwo = () => {
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageFLU} date={t('Blog_FLU_Date')} title={t('Blog_FLU_Title')} url={t('Blog_FLU_URL')} text={t('Blog_FLU_Text')} />
           </Col> */}
           <Col lg={4} md={6} sm={12} >
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageVaginosis} date={t('Blog_Vaginosis_Date')} title={t('Blog_Vaginosis_Title')} url={t('Blog_Vaginosis_URL')} text={t('Blog_Vaginosis_Text')} />
+          </Col>
+          <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageADENOIDS} date={t('Blog_ADENOIDS_Date')} title={t('Blog_ADENOIDS_Title')} url={t('Blog_ADENOIDS_URL')} text={t('Blog_ADENOIDS_Text')} />
           </Col>
           <Col lg={4} md={6} sm={12} >
@@ -54,9 +57,7 @@ const BlogTwo = () => {
           <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageSTD} date={t('Blog_STD_Date')} title={t('Blog_STD_Title')} url={t('Blog_STD_URL')} text={t('Blog_STD_Text')} />
           </Col>
-          {/* <Col lg={4} md={6} sm={12} >
-            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageVaginosis} date={t('Blog_Vaginosis_Date')} title={t('Blog_Vaginosis_Title')} url={t('Blog_Vaginosis_URL')} text={t('Blog_Vaginosis_Text')} />
-          </Col> */}
+          
           {/* <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageCardiovascularDiseases} date={t('Blog_CardiovascularDiseases_Date')} title={t('Blog_CardiovascularDiseases_Title')} url={t('Blog_CardiovascularDiseases_URL')} text={t('Blog_CardiovascularDiseases_Text')} />
           </Col> */}
