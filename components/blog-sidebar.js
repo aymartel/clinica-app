@@ -19,6 +19,7 @@ import imageCholesterol from "@/images/blog/colesterol.webp";
 import imageUltrasound from "@/images/blog/ultrasound.webp";
 import imageADENOIDS from "@/images/blog/adenoids.webp";
 import imageFLU from "@/images/blog/flu.webp";
+import imageLove from "@/images/blog/love2.webp";
 
 import { useRouter } from "next/router";
 
@@ -45,6 +46,18 @@ const BlogSidebar = () => {
                 : null
             } */}
             {
+              (router.asPath != t('Blog_Love_URL')) ?
+                <li>
+                  <a href={t('Blog_Love_URL')}>
+                    <div className="img-block">
+                      <Img src={imageLove} alt="image love" layout="responsive" />
+                    </div>
+                    {t('Blog_Love_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
               (router.asPath != t('Blog_Vaginosis_URL')) ?
                 <li>
                   <a href={t('Blog_Vaginosis_URL')}>
@@ -56,6 +69,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             }
+            
             {
               (router.asPath != t('Blog_ADENOIDS_URL')) ?
                 <li>
