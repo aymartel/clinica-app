@@ -19,6 +19,7 @@ import imageultrasound from "@/images/blog/ultrasound.webp";
 import imageADENOIDS from "@/images/blog/adenoids.webp";
 import imageFLU from "@/images/blog/flu.webp";
 import imageLove from "@/images/blog/love.webp";
+import imageBloodHighPresure from "@/images/blog/highpresure.webp";
 
 const BlogTwo = () => {
   const t = useTranslations('Index')
@@ -31,6 +32,9 @@ const BlogTwo = () => {
           {/* <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageFLU} date={t('Blog_FLU_Date')} title={t('Blog_FLU_Title')} url={t('Blog_FLU_URL')} text={t('Blog_FLU_Text')} />
           </Col> */}
+          <Col lg={4} md={6} sm={12} >
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageBloodHighPresure} date={t('Blog_BloodHighPresure_Date')} title={t('Blog_BloodHighPresure_Title')} url={t('Blog_BloodHighPresure_URL')} text={t('Blog_BloodHighPresure_Text')} />
+          </Col>
            <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageLove} date={t('Blog_Love_Date')} title={t('Blog_Love_Title')} url={t('Blog_Love_URL')} text={t('Blog_Love_Text')} />
           </Col>

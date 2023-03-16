@@ -20,6 +20,7 @@ import imageUltrasound from "@/images/blog/ultrasound.webp";
 import imageADENOIDS from "@/images/blog/adenoids.webp";
 import imageFLU from "@/images/blog/flu.webp";
 import imageLove from "@/images/blog/love2.webp";
+import imageBloodHighPresure from "@/images/blog/highpresure.webp";
 
 import { useRouter } from "next/router";
 
@@ -45,6 +46,18 @@ const BlogSidebar = () => {
                 </li>
                 : null
             } */}
+            {
+              (router.asPath != t('Blog_BloodHighPresure_URL')) ?
+                <li>
+                  <a href={t('Blog_BloodHighPresure_URL')}>
+                    <div className="img-block">
+                      <Img src={imageBloodHighPresure} alt="image BloodHighPresure" layout="responsive" />
+                    </div>
+                    {t('Blog_BloodHighPresure_Title')}
+                  </a>
+                </li>
+                : null
+            }
             {
               (router.asPath != t('Blog_Love_URL')) ?
                 <li>
