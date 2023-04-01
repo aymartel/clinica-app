@@ -46,6 +46,18 @@ const BlogSidebar = () => {
                 </li>
                 : null
             } */}
+             {
+              (router.asPath != t('Blog_Obesity_URL')) ?
+                <li>
+                  <a href={t('Blog_Obesity_URL')}>
+                    <div className="img-block">
+                      <Img src={imageObesity} alt="image obesity" layout="responsive" />
+                    </div>
+                    {t('Blog_Obesity_Title')}
+                  </a>
+                </li>
+                : null
+            }
             {
               (router.asPath != t('Blog_BloodHighPresure_URL')) ?
                 <li>
@@ -191,18 +203,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             } */}
-            {/* {
-              (router.asPath != t('Blog_Obesity_URL')) ?
-                <li>
-                  <a href={t('Blog_Obesity_URL')}>
-                    <div className="img-block">
-                      <Img src={imageObesity} alt="image obesity" layout="responsive" />
-                    </div>
-                    {t('Blog_Obesity_Title')}
-                  </a>
-                </li>
-                : null
-            } */}
+           
 
 
             {
