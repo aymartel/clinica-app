@@ -46,7 +46,19 @@ const BlogSidebar = () => {
                 </li>
                 : null
             } */}
-             {
+            {
+              (router.asPath != t('Blog_Mammogram_URL')) ?
+                <li>
+                  <a href={t('Blog_Mammogram_URL')}>
+                    <div className="img-block">
+                      <Img src={imageMammogram} alt="image mammogram" layout="responsive" />
+                    </div>
+                    {t('Blog_Mammogram_Title')}
+                  </a>
+                </li>
+                : null
+            }
+            {
               (router.asPath != t('Blog_Obesity_URL')) ?
                 <li>
                   <a href={t('Blog_Obesity_URL')}>
@@ -94,7 +106,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             }
-            
+
             {
               (router.asPath != t('Blog_ADENOIDS_URL')) ?
                 <li>
@@ -191,19 +203,8 @@ const BlogSidebar = () => {
                 </li>
                 : null
             } */}
-            {/* {
-              (router.asPath != t('Blog_Mammogram_URL')) ?
-                <li>
-                  <a href={t('Blog_Mammogram_URL')}>
-                    <div className="img-block">
-                      <Img src={imageMammogram} alt="image mammogram" layout="responsive" />
-                    </div>
-                    {t('Blog_Mammogram_Title')}
-                  </a>
-                </li>
-                : null
-            } */}
-           
+
+
 
 
             {
