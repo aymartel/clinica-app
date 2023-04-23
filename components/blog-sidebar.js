@@ -34,6 +34,18 @@ const BlogSidebar = () => {
         <div className="latest_post">
           <h2>{t('Blog_Latest')}</h2>
           <ul>
+          {
+              (router.asPath != t('Blog_Ultrasound_URL')) ?
+                <li>
+                  <a href={t('Blog_Ultrasound_URL')}>
+                    <div className="img-block">
+                      <Img src={imageUltrasound} alt="image Ultrasound" layout="responsive" />
+                    </div>
+                    {t('Blog_Ultrasound_Title')}
+                  </a>
+                </li>
+                : null
+            }
             {/* {
               (router.asPath != t('Blog_FLU_URL')) ?
                 <li>
@@ -119,18 +131,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             }
-            {/* {
-              (router.asPath != t('Blog_Ultrasound_URL')) ?
-                <li>
-                  <a href={t('Blog_Ultrasound_URL')}>
-                    <div className="img-block">
-                      <Img src={imageUltrasound} alt="image Ultrasound" layout="responsive" />
-                    </div>
-                    {t('Blog_Ultrasound_Title')}
-                  </a>
-                </li>
-                : null
-            } */}
+            
             {
               (router.asPath != t('Blog_ProstateExamination_URL')) ?
                 <li>
