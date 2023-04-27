@@ -16,6 +16,7 @@ import logo_seguro_medico10 from "@/images/logos/logo_seguro_medico10.webp";
 import logo_seguro_medico11 from "@/images/logos/logo_seguro_medico11.webp";
 import logo_seguro_medico12 from "@/images/logos/logo_seguro_medico12.webp";
 import logo_seguro_medico13 from "@/images/logos/logo_seguro_medico13.webp";
+import logo_seguro_medico14 from "@/images/logos/logo_seguro_medico14.webp";
 
 const SponsorOne = ({ extraClass }) => {
   const sponsorCarouselOptions = {
@@ -89,6 +90,9 @@ const SponsorOne = ({ extraClass }) => {
             </SwiperSlide>
             <SwiperSlide>
               <Image src={logo_seguro_medico13} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={logo_seguro_medico14} alt="" />
             </SwiperSlide>
           </div>
         </Swiper>

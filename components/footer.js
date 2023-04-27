@@ -96,7 +96,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-8 col-sm-6 copyright_text">
                 <p>
-                  &copy; copyright {new Date().getFullYear()} by AMC
+                  &copy; copyright {new Date().getFullYear()} Clinica Hispana Salud y Esperanza | Medical Clinic | Houston Tx
                 </p>
               </div>
               <div className="col-md-4 col-sm-6 copyright_social text-end">
