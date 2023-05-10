@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
         <title itemProp="name">
-          Clínica Hispana Salud y Esperanza | Medical Clinic in Houston TX
+        Clínica Hispana Salud Y Esperanza | Houston Texas | Clínica cerca de mi
         </title>
         <meta name="description" content="Clínica Hispana Salud Y Esperanza | Clínica Médica en Houston Tx. Atención médica con o sin seguro médico y sin necesidad de cita previa.♥ Hispanic medical clinic near you ♥." />
         <meta name="keywords" content="Clínica, Hispana, Houston Tx" />
