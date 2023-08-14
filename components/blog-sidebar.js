@@ -18,7 +18,7 @@ import imageTinnitus from "@/images/blog/tinnitus.webp";
 import imageCholesterol from "@/images/blog/colesterol.webp";
 import imageUltrasound from "@/images/blog/ultrasound.webp";
 import imageADENOIDS from "@/images/blog/adenoids.webp";
-import imageFLU from "@/images/blog/flu.webp";
+import imageAllergy from "@/images/blog/allergy.webp";
 import imageLove from "@/images/blog/love2.webp";
 import imageBloodHighPresure from "@/images/blog/highpresure.webp";
 
@@ -34,7 +34,7 @@ const BlogSidebar = () => {
         <div className="latest_post">
           <h2>{t('Blog_Latest')}</h2>
           <ul>
-          {
+            {
               (router.asPath != t('Blog_Ultrasound_URL')) ?
                 <li>
                   <a href={t('Blog_Ultrasound_URL')}>
@@ -58,6 +58,18 @@ const BlogSidebar = () => {
                 </li>
                 : null
             } */}
+            {
+              (router.asPath != t('Blog_Allergy_URL')) ?
+                <li>
+                  <a href={t('Blog_Allergy_URL')}>
+                    <div className="img-block">
+                      <Img src={imageAllergy} alt="image Allergy" layout="responsive" />
+                    </div>
+                    {t('Blog_Allergy_Title')}
+                  </a>
+                </li>
+                : null
+            }
             {
               (router.asPath != t('Blog_Mammogram_URL')) ?
                 <li>
@@ -131,7 +143,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             }
-            
+
             {
               (router.asPath != t('Blog_ProstateExamination_URL')) ?
                 <li>

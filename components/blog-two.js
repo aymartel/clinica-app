@@ -17,7 +17,7 @@ import imageTinnitus from "@/images/blog/tinnitus.webp";
 import imageCholesterol from "@/images/blog/colesterol.webp";
 import imageultrasound from "@/images/blog/ultrasound.webp";
 import imageADENOIDS from "@/images/blog/adenoids.webp";
-import imageFLU from "@/images/blog/flu.webp";
+import imageAllergy from "@/images/blog/allergy.webp";
 import imageLove from "@/images/blog/love.webp";
 import imageBloodHighPresure from "@/images/blog/highpresure.webp";
 
@@ -28,6 +28,9 @@ const BlogTwo = () => {
     <section className="blog_share_area section_padding blog-page">
       <Container>
         <Row>
+        <Col lg={4} md={6} sm={12} >
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageAllergy} date={t('Blog_Allergy_Date')} title={t('Blog_Allergy_Title')} url={t('Blog_Allergy_URL')} text={t('Blog_Allergy_Text')} />
+          </Col>
         <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageultrasound} date={t('Blog_Ultrasound_Date')} title={t('Blog_Ultrasound_Title')} url={t('Blog_Ultrasound_URL')} text={t('Blog_Ultrasound_Text')} />
           </Col>
