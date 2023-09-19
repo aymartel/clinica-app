@@ -6,7 +6,7 @@ import PageHeader from "@/components/page-header";
 import Footer from "@/components/footer";
 import BlogDetails from "@/components/blog-details";
 import { useTranslations } from 'next-intl'
-import imageBPT from "@/images/blog/blood-pregnancy-test";
+import imageBPT from "@/images/blog/blood-pregnancy-test.webp";
 
 const BlogTinnitus = () => {
   const t = useTranslations('Index');

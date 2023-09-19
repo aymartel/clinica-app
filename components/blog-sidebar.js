@@ -20,7 +20,7 @@ import imageUltrasound from "@/images/blog/ultrasound.webp";
 import imageADENOIDS from "@/images/blog/adenoids.webp";
 import imageAllergy from "@/images/blog/allergy.webp";
 import imageLove from "@/images/blog/love2.webp";
-import imageBPT from "@/images/blog/blood-pregnancy-test";
+import imageBPT from "@/images/blog/blood-pregnancy-test.webp";
 import imageBloodHighPresure from "@/images/blog/highpresure.webp";
 
 import { useRouter } from "next/router";
