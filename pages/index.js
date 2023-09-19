@@ -33,9 +33,9 @@ const HomeOne = () => {
         /> */}
         <AboutOne/>
         <ServiceOneHome/>
+        <GalleryOne/>
         <TestimonialsOne/>
         <FunfactOne/>
-        <GalleryOne/>
         {/* <SponsorOne /> */}
         {/* <CtaTwo /> */}
         {/* <BlogOne /> */}
