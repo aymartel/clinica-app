@@ -12,14 +12,14 @@ const BlogTinnitus = () => {
   const t = useTranslations('Index');
   return (
     <MenuContextProvider>
-      <Layout PageTitle={t('Blog_Tinnitus_Title')} itemscope itemtype="https://schema.org/Article">
+      <Layout PageTitle={t('Blog_BloodTestPregnancy_Title')} itemscope itemtype="https://schema.org/Article">
         <HeaderOne />
-        <PageHeader title={t('Blog_Tinnitus_Title')} name="Blog" />
+        <PageHeader title={t('Blog_BloodTestPregnancy_Title')} name="Blog" />
         <BlogDetails
-          subTitle={t('Blog_Tinnitus_SubTitle')}
-          text={t('Blog_Tinnitus_Text')}
-          tags={t('Blog_Tinnitus_Tags')} 
-          date={t('Blog_Tinnitus_Date')}
+          subTitle={t('Blog_BloodTestPregnancy_SubTitle')}
+          text={t('Blog_BloodTestPregnancy_Text')}
+          tags={t('Blog_BloodTestPregnancy_Tags')} 
+          date={t('Blog_BloodTestPregnancy_Date')}
           image={imageBPT}/>
         <Footer />
       </Layout>
