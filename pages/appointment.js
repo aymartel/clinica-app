@@ -17,7 +17,7 @@ const Appointment = () => {
       <Layout PageTitle="Appointment Page">
         <HeaderOne/>
         <PageHeader title={t('Header_Book_Today')} name="Book Today" />
-        <SponsorOne />
+        {/* <SponsorOne /> */}
         <ContactOne/>
         <PayOptions/>
         <Footer/>
