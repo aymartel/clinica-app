@@ -36,7 +36,7 @@ const HomeOne = () => {
         <FunfactOne/>
         <GalleryOne/>
         <TestimonialsOne/>
-        {/* <SponsorOne /> */}
+        <SponsorOne />
         {/* <CtaTwo /> */}
         {/* <BlogOne /> */}
         <ContactOne/>
