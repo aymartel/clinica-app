@@ -55,7 +55,7 @@ const SponsorOne = ({ extraClass }) => {
       className={`clients_logo_area text-center section_padding  ${extraClass}`}
     >
       <Container>
-        {/* <Swiper {...sponsorCarouselOptions} className="clients_logo ">
+        <Swiper {...sponsorCarouselOptions} className="clients_logo ">
           <div className="swiper-wrapper">
             <SwiperSlide>
               <Image src={logo_seguro_medico1} alt="" />
@@ -95,7 +95,7 @@ const SponsorOne = ({ extraClass }) => {
               <Image src={logo_seguro_medico14} alt="" />
             </SwiperSlide>
           </div>
-        </Swiper> */}
+        </Swiper>
       </Container>
     </div>
   );
