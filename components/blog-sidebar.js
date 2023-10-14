@@ -29,12 +29,25 @@ const BlogSidebar = () => {
   const t = useTranslations('Index');
   const router = useRouter();
   return (
+    
     <div className="blog_details_right">
 
       <div className="blog_right_box mb-30">
         <div className="latest_post">
           <h2>{t('Blog_Latest')}</h2>
           <ul>
+                       {
+              (router.asPath != t('Blog_Tinnitus_URL')) ?
+                <li>
+                  <a href={t('Blog_Tinnitus_URL')}>
+                    <div className="img-block">
+                      <Img src={imageTinnitus} alt="image Tinnitus" layout="responsive" />
+                    </div>
+                    {t('Blog_Tinnitus_Title')}
+                  </a>
+                </li>
+                : null
+            }
             {
               (router.asPath != t('Blog_Ultrasound_URL')) ?
                 <li>
@@ -181,18 +194,7 @@ const BlogSidebar = () => {
                 </li>
                 : null
             }
-            {/* {
-              (router.asPath != t('Blog_Tinnitus_URL')) ?
-                <li>
-                  <a href={t('Blog_Tinnitus_URL')}>
-                    <div className="img-block">
-                      <Img src={imageTinnitus} alt="image Tinnitus" layout="responsive" />
-                    </div>
-                    {t('Blog_Tinnitus_Title')}
-                  </a>
-                </li>
-                : null
-            } */}
+ 
             {
               (router.asPath != t('Blog_PapSmearTest_URL')) ?
                 <li>

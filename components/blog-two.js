@@ -29,6 +29,9 @@ const BlogTwo = () => {
     <section className="blog_share_area section_padding blog-page">
       <Container>
         <Row>
+          <Col lg={4} md={6} sm={12} >
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageTinnitus} date={t('Blog_Tinnitus_Date')} title={t('Blog_Tinnitus_Title')} url={t('Blog_Tinnitus_URL')} text={t('Blog_Tinnitus_Text')} />
+          </Col>
         <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageBPT} date={t('Blog_BloodTestPregnancy_Date')} title={t('Blog_BloodTestPregnancy_Title')} url={t('Blog_BloodTestPregnancy_URL')} text={t('Blog_BloodTestPregnancy_Text')} />
           </Col>
@@ -66,9 +69,7 @@ const BlogTwo = () => {
           <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageCholesterol} date={t('Blog_Cholesterol_Date')} title={t('Blog_Cholesterol_Title')} url={t('Blog_Cholesterol_URL')} text={t('Blog_Cholesterol_Text')} />
           </Col>
-          {/* <Col lg={4} md={6} sm={12} >
-            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageTinnitus} date={t('Blog_Tinnitus_Date')} title={t('Blog_Tinnitus_Title')} url={t('Blog_Tinnitus_URL')} text={t('Blog_Tinnitus_Text')} />
-          </Col> */}
+          
           <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageCheckUps} date={t('Blog_CheckUps_Date')} title={t('Blog_CheckUps_Title')} url={t('Blog_CheckUps_URL')} text={t('Blog_CheckUps_Text')} />
           </Col>
