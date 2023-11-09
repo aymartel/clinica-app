@@ -36,6 +36,18 @@ const BlogSidebar = () => {
         <div className="latest_post">
           <h2>{t('Blog_Latest')}</h2>
           <ul>
+          {
+              (router.asPath != t('Blog_INMGRATIONEXAM_URL')) ?
+                <li>
+                  <a href={t('Blog_INMGRATIONEXAM_URL')}>
+                    <div className="img-block">
+                      <Img src={imageINMGRATIONEXAM} alt="image INMGRATIONEXAM" layout="responsive" />
+                    </div>
+                    {t('Blog_INMGRATIONEXAM_Title')}
+                  </a>
+                </li>
+                : null
+            }
                        {
               (router.asPath != t('Blog_Tinnitus_URL')) ?
                 <li>

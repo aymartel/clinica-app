@@ -21,6 +21,7 @@ import imageAllergy from "@/images/blog/allergy.webp";
 import imageLove from "@/images/blog/love.webp";
 import imageBPT from "@/images/blog/blood-pregnancy-test.webp";
 import imageBloodHighPresure from "@/images/blog/highpresure.webp";
+import imageINMGRATIONEXAM from "@/images/blog/inmigrationExam.webp";
 
 const BlogTwo = () => {
   const t = useTranslations('Index')
@@ -29,6 +30,9 @@ const BlogTwo = () => {
     <section className="blog_share_area section_padding blog-page">
       <Container>
         <Row>
+        <Col lg={4} md={6} sm={12} >
+            <BlogCard buttonText={t('ServiceOneData_Button')} image={imageINMGRATIONEXAM} date={t('Blog_INMGRATIONEXAM_Date')} title={t('Blog_INMGRATIONEXAM_Title')} url={t('Blog_INMGRATIONEXAM_URL')} text={t('Blog_INMGRATIONEXAM_Text')} />
+          </Col>
           <Col lg={4} md={6} sm={12} >
             <BlogCard buttonText={t('ServiceOneData_Button')} image={imageTinnitus} date={t('Blog_Tinnitus_Date')} title={t('Blog_Tinnitus_Title')} url={t('Blog_Tinnitus_URL')} text={t('Blog_Tinnitus_Text')} />
           </Col>
