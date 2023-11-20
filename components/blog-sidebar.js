@@ -23,6 +23,7 @@ import imageLove from "@/images/blog/love2.webp";
 import imageBPT from "@/images/blog/blood-pregnancy-test.webp";
 import imageBloodHighPresure from "@/images/blog/highpresure.webp";
 import imageINMGRATIONEXAM from "@/images/blog/inmigrationExam.webp";
+import imageVitaminSerums from "@/images/blog/vitamin-serums.webp";
 import { useRouter } from "next/router";
 
 const BlogSidebar = () => {
