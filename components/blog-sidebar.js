@@ -37,6 +37,18 @@ const BlogSidebar = () => {
           <h2>{t('Blog_Latest')}</h2>
           <ul>
           {
+              (router.asPath != t('Blog_VitaminSerums_URL')) ?
+                <li>
+                  <a href={t('Blog_VitaminSerums_URL')}>
+                    <div className="img-block">
+                      <Img src={iamgeVitaminSerums} alt=" VitaminSerums" layout="responsive" />
+                    </div>
+                    {t('Blog_VitaminSerums_Title')}
+                  </a>
+                </li>
+                : null
+            }
+          {
               (router.asPath != t('Blog_INMGRATIONEXAM_URL')) ?
                 <li>
                   <a href={t('Blog_INMGRATIONEXAM_URL')}>
