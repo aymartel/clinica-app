@@ -42,7 +42,7 @@ const BlogSidebar = () => {
                 <li>
                   <a href={t('Blog_VitaminSerums_URL')}>
                     <div className="img-block">
-                      <Img src={iamgeVitaminSerums} alt=" VitaminSerums" layout="responsive" />
+                      <Img src={imageVitaminSerums} alt=" VitaminSerums" layout="responsive" />
                     </div>
                     {t('Blog_VitaminSerums_Title')}
                   </a>
